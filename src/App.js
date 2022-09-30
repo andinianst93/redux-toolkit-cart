@@ -11,10 +11,12 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotals())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cartItems])
 
   useEffect(() => {
     dispatch(getCartItems())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (isLoading) {
